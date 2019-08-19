@@ -1,2 +1,37 @@
 <!--pages/category/index.wxml-->
-<text>pages/category/index.wxml</text>
+<view class="container">
+
+  <!-- 搜索栏 -->
+  <view class="search">
+    <view class="search-input">
+      <icon type="search" size="16" /> 搜索
+    </view>
+  </view>
+  <!-- 分类页 -->
+  <view class="main">
+    <!-- 左侧菜单栏 -->
+    <view class="navs">
+      <view wx:for="{{navs}}" wx:key="{{index}}" bindtap="handleChange" data-index="{{index}}" class="navs-item {{index===current?'active':''}}">
+        {{item.cat_name}}
+      </view>
+    </view>
+    <!-- 右侧品牌列表 -->
+    <view class="categorys">
+      <view class="cate-row" wx:for="{{navs[current].children}}" wx:key="{{index}}">
+        <view class="cate-title">
+          <text>/</text> {{item.cat_name}}
+          <text>/</text>
+        </view>
+        <view class="cate-list">
+          <navigator 
+          url="/pages/search_list/index?keyword={{item.cat_name}}" class="cate-item" wx:for="{{item.children}}" wx:key="{{index}}">
+            <image src="{{item.cat_icon}}" mode="aspectFill"></image>
+            <view>{{item.cat_name}}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

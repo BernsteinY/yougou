@@ -1,1 +1,117 @@
 /* pages/category/index.wxss */
+
+ .container{
+   position: absolute;
+   width: 100%;
+   top: 100rpx;
+   bottom: 0;
+ }
+ .search{
+    padding: 20rpx;
+    background: #ff2d4a;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  .search-input{
+    height: 60rpx;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #666;
+    
+  }
+  .search-input icon{
+    margin-right: 10px;
+  }
+  .main{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+  }
+  .navs{
+    width: 200rpx;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: scroll;
+
+  }
+  .navs .navs-item{
+    padding: 24rpx 0;
+    text-align: center;
+    background: #f6f6f6;
+    border-bottom: 1px solid #eee;
+  }
+  .navs .active{
+    color: red;
+    font-weight: 500;
+    background: #fff;
+    position: relative;
+  }
+  .navs .active::before{
+    display: block;
+    width: 4px;
+    height: 60rpx;
+    background: red;
+    content: '';
+    position: absolute;
+    top: 20rpx;
+    left: 0;
+  }
+  .categorys{
+    position: absolute;
+    left: 200rpx;
+    right: 0;
+    height: 100%;
+    flex: 1;
+    padding: 20rpx;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.cate-row{
+
+}
+.cate-title{
+  text-align: center;
+  margin: 20rpx 0;
+}
+.cate-title text{
+  margin: 0 20rpx;
+  color: #eee;
+}
+.cate-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cate-item{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+.cate-item image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.cate-item view{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

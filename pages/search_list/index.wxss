@@ -1,0 +1,72 @@
+/* pages/search_list/index.wxss */
+
+
+.search{
+  background: #eee;
+  padding: 20rpx;
+    box-sizing: border-box;
+
+}
+.search-input{
+  background: #fff;
+  height: 60rpx;
+  padding:0 20rpx;
+  display: flex;
+  font-size: 14px;
+  color: #666;
+  align-items: center;
+}
+.search-input icon{
+  margin-right: 10rpx;
+}
+
+/* 导航栏 */
+.tab{
+  padding: 25rpx 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+.tab .active{
+  color: red;
+}
+
+/* 商品部分 */
+.goods-all{
+display: flex;
+justify-content: space-between;
+padding: 20rpx;
+border-bottom: 1px #ddd solid;
+}
+.goods-list image{
+  width: 200rpx;
+  height: 200rpx;
+  flex-shrink:0;
+}
+.goods-right{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;}
+.goods-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+.goods-price{
+  color: red;
+  font-size: 14px;
+}
+.goods-price text{
+  font-size: 20px;
+}
+
+
+.load-more{
+  text-align: center;
+  color: #999
+}

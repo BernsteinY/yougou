@@ -1,10 +1,15 @@
 /**index.wxss**/
 .container{
- 
 }
  .search{
     padding: 20rpx;
     background: #ff2d4a;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
   }
 
   .search-input{
@@ -16,11 +21,13 @@
     border-radius: 4px;
     font-size: 14px;
     color: #666;
+    
   }
   .search-input icon{
     margin-right: 10px;
   }
   .slide-image{
+     margin-top: 100rpx;
     width: 750rpx;
     height: 340rpx
   }

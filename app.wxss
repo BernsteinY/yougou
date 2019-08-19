@@ -1,1 +1,3 @@
 /**app.wxss**/
+    
+@import "./common/style.wxss";
